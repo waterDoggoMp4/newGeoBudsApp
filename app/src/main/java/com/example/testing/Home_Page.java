@@ -15,7 +15,7 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class Home_Page extends AppCompatActivity implements OnMapReadyCallback {
+public class Home_Page extends AppCompatActivity implements OnMapReadyCallback{
 
     private GoogleMap gMap;
     @Override
@@ -54,8 +54,13 @@ public class Home_Page extends AppCompatActivity implements OnMapReadyCallback {
     public void onMapReady(@NonNull GoogleMap googleMap) {
         Log.d("Map", "onMapReady: Map is ready");
 
-        googleMap.addMarker(new MarkerOptions()
-                .position(new LatLng(0, 0))
-                .title("Marker"));
+        LatLng markerLocation = new LatLng(0, 0);
+        MarkerOptions markerOptions = new MarkerOptions()
+                .position(markerLocation)
+                .title("Post_1")
+                .snippet("I'm here in the ocean");
+
+        googleMap.addMarker(markerOptions);
     }
+
 }

@@ -91,30 +91,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.245" />
 
-    <TextView
-        android:id="@+id/MapPlaceholder2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Put Map here"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/LocationText"
-        app:layout_constraintVertical_bias="0.099" />
-
     <Button
         android:id="@+id/Post"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="161dp"
-        android:layout_marginTop="193dp"
         android:layout_marginEnd="159dp"
         android:layout_marginBottom="140dp"
-        android:text="Post It!"
         android:backgroundTint="#302C2C"
+        android:text="Post It!"
         app:layout_constraintBottom_toTopOf="@+id/materialToolbar2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/MapPlaceholder2" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
